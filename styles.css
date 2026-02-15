@@ -851,10 +851,6 @@ a {
   .central-text{
     margin-top: 12%;
   }
-
-  .service-advertisement{
-    margin-top: 1%;
-  }
 }
 
 /* Media Queries for Different Screen Sizes */
@@ -980,5 +976,6 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 

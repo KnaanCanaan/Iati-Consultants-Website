@@ -934,7 +934,7 @@ a {
   }
 
   .service-advertisement{
-    margin-top: 14.5%;
+    margin-top: 11%;
 
     font-size: 55px;
   }
@@ -986,3 +986,4 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+

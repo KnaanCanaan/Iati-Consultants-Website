@@ -603,7 +603,7 @@ a {
   margin-right: 5%;
   margin-left: 5%;
 
-  text-align: justify;
+  text-align: center;
 }
 
 .services-card .button-position{
@@ -964,3 +964,4 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+

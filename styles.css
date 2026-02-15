@@ -932,12 +932,6 @@ a {
 
     font-size: 55px;
   }
-
-  .service-advertisement{
-    margin-top: 11%;
-
-    font-size: 55px;
-  }
 }
 
 /* For very large screens */
@@ -986,4 +980,5 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 

@@ -918,7 +918,7 @@ a {
   }
 
   .central-text{
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -970,6 +970,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

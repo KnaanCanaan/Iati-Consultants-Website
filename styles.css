@@ -914,6 +914,7 @@ a {
 
   .navigation-menu-element{
     padding: 0px 0px;
+    font-size:20px;
   }
 }
 
@@ -965,5 +966,6 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 

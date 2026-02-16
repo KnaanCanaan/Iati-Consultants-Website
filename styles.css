@@ -918,15 +918,15 @@ a {
   }
 
   .central-text{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .service-advertisement{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .service-advertisement-bottom{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -978,6 +978,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

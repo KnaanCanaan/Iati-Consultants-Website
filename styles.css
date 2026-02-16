@@ -924,10 +924,6 @@ a {
   .service-advertisement{
     font-size: 40px;
   }
-
-  .service-advertisement-bottom{
-    font-size: 30px;
-  }
 }
 
 /* For very large screens */
@@ -978,6 +974,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

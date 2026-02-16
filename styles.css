@@ -916,6 +916,10 @@ a {
     padding: 0px 0px;
     font-size:20px;
   }
+
+  .central-text{
+    font-size: 50px;
+  }
 }
 
 /* For very large screens */
@@ -966,6 +970,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

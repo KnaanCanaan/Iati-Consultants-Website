@@ -911,6 +911,11 @@ a {
     flex-direction: column;
     gap: 30px;
   }
+
+  .navigation-menu-element{
+    padding: 5px 20px;
+    font-size: 20px;
+  }
 }
 
 /* For very large screens */
@@ -961,5 +966,3 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
-
-

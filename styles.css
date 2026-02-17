@@ -711,7 +711,7 @@ a {
 }
 
 .navigation-menu-element:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   color: red;
 }
 
@@ -978,6 +978,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

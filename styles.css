@@ -89,6 +89,122 @@ a {
   text-decoration: none;
 }
 
+.content-ribbon-background{
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: #f8f8f8;
+  gap: 30px;
+
+  margin-top: 3%;
+  padding: 2.5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.content-ribbon-background h2{
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 700;
+  font-family: serif, georgia, times;
+
+  line-height: 1.2;
+  color: darkblue;
+  border-bottom: 2px solid red;
+  padding-bottom: 0.5rem;
+}
+
+.content-ribbon-background p{
+  font-family: serif, georgia, times;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #333;
+
+  margin-bottom: 0.5rem;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  margin-top: 5%;
+
+  margin-right: 15%;
+  margin-left: 15%;
+
+  text-align: justify;
+}
+
+.content-ribbon{
+  justify-content: center;
+  align-items: flex-start;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  place-items: center;
+  gap: 30px;
+
+  margin-top: 3%;
+
+  padding: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 1%;
+}
+
+.content-card{
+  height: 500px;
+  width: 270px;
+
+  margin: 1%;
+  margin-top: 0%;
+
+  padding: 25px;
+  padding-top: 12%;
+
+  border-radius: 10px;
+
+  border-top: 10px solid darkblue;
+  border-bottom: 10px solid darkblue;
+
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+  transition: 0.5s;
+}
+
+.content-card p{
+  font-family: serif, georgia, times;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+
+  margin-bottom: 1.5rem;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 0px;
+
+  margin-right: 5%;
+  margin-left: 5%;
+
+  text-align: justify;
+}
+
+.content-card h3{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: serif, georgia, times;
+
+  line-height: 1.2;
+
+  color: darkblue;
+
+  border-bottom: 2px solid red;
+  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
 .back-button {
   width: 60px;
   height: 60px;
@@ -229,6 +345,7 @@ a {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  place-items: center;
 }
 
 .service-card-container a{
@@ -546,6 +663,7 @@ a {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
   gap: 30px;
 
   margin-top: 3%;
@@ -978,6 +1096,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

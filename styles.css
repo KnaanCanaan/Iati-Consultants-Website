@@ -161,6 +161,8 @@ a {
   padding-top: 12%;
 
   border-radius: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 
   border-top: 10px solid darkblue;
   border-bottom: 10px solid darkblue;
@@ -1096,6 +1098,7 @@ a {
 .text-overlay div:hover{
   transform: translate(0%, -15%);
 }
+
 
 
 

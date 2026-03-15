@@ -468,6 +468,11 @@ a {
   margin-left: 5%;
 
   text-align: justify;
+
+    hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .service-page-images{
@@ -734,7 +739,11 @@ a {
   margin-right: 5%;
   margin-left: 5%;
 
-  text-align: center;
+  text-align: justified;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .services-card .button-position{
@@ -805,6 +814,10 @@ a {
   margin-left: 5%;
 
   text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .logo-position{

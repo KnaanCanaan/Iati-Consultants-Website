@@ -168,7 +168,7 @@ a {
   background-color: white;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .content-card:hover{

@@ -195,6 +195,11 @@ a {
   margin-left: 5%;
 
   text-align: justify;
+
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .content-card h3{

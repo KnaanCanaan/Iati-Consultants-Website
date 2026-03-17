@@ -326,6 +326,8 @@ a {
   height: 450px;
 
   border-radius: 5%;
+
+  transition: 0.5s;
 }
 
 .contact-page-images:hover{

@@ -328,6 +328,11 @@ a {
   border-radius: 5%;
 }
 
+.contact-page-images:hover{
+  width: 480px;
+  height: 480px;
+}
+
 .contact-content{
   text-align: center;
 

@@ -977,6 +977,14 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  
+  .form-container {
+    width: 100%;
+  }
+
+  .form-text{
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

@@ -244,8 +244,8 @@ textarea {
   padding: 0.5%;
   padding-top: 15px;
 
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 
   width: 100%;
 }

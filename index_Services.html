@@ -12,19 +12,21 @@
 
   <body>
     <!-- Navigation Section -->
-    <div class="navigation-menu-background">
+    <header class="navigation-menu-background">
       <div class="logo-position">
-        <a href="index.html"><h1><span class="logo-colour-change">IATI</span> CONSULTANTS</h1></a>
+        <a href="index.html" aria-label="Homepage">
+          <h2 class="logo-design"><span class="logo-colour-change">IATI</span> CONSULTANTS</h2>
+        </a>
       </div>
 
-      <div class="navigation-menu">
-        <div class="navigation-menu-element"><a href="index.html">Home</a></div>
+      <nav class="navigation-menu" aria-label="Main navigation">
+        <div class="navigation-menu-element"><a href="index.html" class="active">Home</a></div>
         <div class="navigation-menu-element" style="color: red;"><a href="index_Services.html">Services</a></div>
         <div class="navigation-menu-element"><a href="index_Staff.html">Staff</a></div>
         <div class="navigation-menu-element"><a href="index_Contact.html">Contact</a></div>
-      </div>
-    </div>
-    
+      </nav>
+    </header>
+
     <!-- Image Section -->
     <div class="tinted-image">
       <div class="text-overlay">
@@ -35,84 +37,94 @@
 
     <!-- Services Section -->
     <div class="service-background-white">
+      <img src="Images/Service-Image_1.png" class="service-page-images" alt="an image of an individual working within an office of a high-rise building, with the sun setting over the city in the bakcground.">
       <div class="services-content">
-        <h2>Navigating The World Of Politics</h2>
+        <h2>Navigate The Political World</h2>
         <p>The Pacific comprises a rich myriad of cultures, traditions, ethnicities, and socio-political
-systems. IATI CONSULTANTS helps clients negotiate the complex challenges that emerge
+systems. Iati Consultants helps clients negotiate the complex challenges that emerge
 from this complicated but exciting region. Our core services are designed to enable direct and
 effective engagement with key regional actors, helping clients navigate the Pacific’s cultural,
-social, political and economic landscapes to develop successful and sustainable policies. We
-aim to strengthen partnerships between different stakeholders by building understanding of
+social, political and economic landscapes to develop successful and sustainable policies.</p>
+
+         <p>We aim to strengthen partnerships between different stakeholders by building understanding of
 critical issues, facilitating knowledge exchange, and fostering respectful and honest dialogue.
 We hope to build bridges that transform the region's complex challenges into opportunities
 for meaningful progress and sustainable outcomes.</p>
       </div>
-      <img src="Images/Service-Image_1.png" class="service-page-images" alt="an image of an individual working within an office of a high-rise building, with the sun setting over the city in the bakcground.">
     </div>
 
-    <div class="service-background-lightgrey">
-      <h2>Explore Our Service Options</h2>
-      <div class="service-card-container">
-        <a href="index_Service_1.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_1.png">
-            <h3>Political Consultation</h3>
-          </div>
-        </a>
+    <div>
+      <h2 class="service-section-title">Services</h2>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn" id="scrollLeft">‹</button>
 
-        <a href="index_Service_2.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_2.png">
-            <h3>Workshops</h3>
-          </div>
-        </a>
+        <div class="services-section-horizontal" id="carouselTrack">
+          <a href="index_Service_1.html">
+            <div class="services-card">
+              <div class="services-icon">🏛️</div>
+              <h2>Political Consultation</h2>
+              <p>Navigate the complex currents of Pacific political and development challenges with confidence and clarity. . .</p>
+            </div>
+          </a>
+          <a href="index_Service_2.html">
+            <div class="services-card">
+              <div class="services-icon">🎓</div>
+              <h2>Custom-Tailored Workshops</h2>
+              <p>Iati Consultants’ tailored workshops give clients the opportunity to have a deeper and more meaningful engagement with the material contained in our reports. . .</p>
+            </div>
+          </a>
+          <a href="index_Service_3.html">
+            <div class="services-card">
+              <div class="services-icon">🎙️</div>
+              <h2>Geopolitical Seminars</h2>
+              <p>Iati Consultants’ exclusive seminars give clients a confidential forum to fully explore the Pacific’s most pressing strategic, governance, development and security issues . .</p>
+            </div>
+          </a>
+          <a href="index_Service_4.html">
+            <div class="services-card">
+              <div class="services-icon">📄</div>
+              <h2>Reports</h2>
+              <p>Receive definitive insights, delivered according to client’s specific priorities in the Pacific. . .</p>
+            </div>
+          </a>
+          <a href="index_Service_5.html">
+            <div class="services-card">
+              <div class="services-icon">🔍</div>
+              <h2>Analysis & Breakdown</h2>
+              <p>Producing clear and effective policies requires in-depth primary and secondary research combined with rigorous, nuanced, and balanced analysis. . .</p>
+            </div>
+          </a>
+          <a href="index_Service_6.html">
+            <div class="services-card">
+              <div class="services-icon">📋</div>
+              <h2>Survey Conducting</h2>
+              <p>We provide expert start-to-finish survey and data collection services designed for the Pacific’s unique cultural and political environment, including those involving Pacific communities in Aotearoa New Zealand. . .</p>
+            </div>
+          </a>
+        </div>
 
-        <a href="index_Service_3.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_3.png">
-            <h3>Seminars</h3>
-          </div>
-        </a>
-
-        <a href="index_Service_4.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_4.png">
-            <h3>Reports</h3>
-          </div>
-        </a>
-
-        <a href="index_Service_5.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_5.png">
-            <h3>Analysis & Breakdown</h3>
-          </div>
-        </a>
-
-        <a href="index_Service_6.html">
-          <div class="service-card-option">
-            <img src="Images/Service-Image-Wide_6.png">
-            <h3>Survey Conducting</h3>
-          </div>
-        </a>
+        <button class="carousel-btn" id="scrollRight">›</button>
       </div>
     </div>
 
-    <div class="service-background-white" style="padding-top: 1%;">
+    <div class="service-background-white" style="margin-top: 5%; margin-bottom: 5%;">
       <img src="Images/Service-Image_2.png" class="service-page-images" alt="an image of an individual working in a high-rise building with the sun shining brightly over the city in the background.">
       <div class="services-content">
         <h2>Reliability & Expertise</h2>
-        <p>Grounded in over 20 years of research and critical assessments of individual country and
-regional issues, IATI CONSULTANTS translate complex problems, be it strategic
-competition, governance and development challenges, or security threats into meaningful
-intelligence. Clients can rely on us for insightful and nuanced perspectives on the Pacific&#39;s
-complex dynamics from high-level geopolitics and security issues to on-the-ground
-governance and development challenges. Our reputation rests on delivering reliable reports,
-informative seminars, and engaging workshop that contributes and guides effective strategies
-and policy-making for the region.</p>
-        <a href="index_Contact.html"><button class="button-design">Contact</button></a>
+        <p>Grounded in over 20 years of research and critical assessments of individual country and regional issues, Iati Consultants translate complex problems, be it strategic competition, governance and development challenges, or security threats into meaningful intelligence. Clients can rely on us for insightful and nuanced perspectives on the Pacific's complex dynamics from high-level geopolitics and security issues to on-the-ground governance and development challenges. Our reputation rests on delivering reliable reports, informative seminars, and engaging workshop that contributes and guides effective strategies and policy-making for the region.</p>
+        <a href="index_Contact.html"><button class="home-page-call-to-action" aria-label="Go to contact page">Contact</button></a>
       </div>
     </div>
   </body>
+
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const leftBtn = document.getElementById('scrollLeft');
+    const rightBtn = document.getElementById('scrollRight');
+
+    rightBtn.addEventListener('click', () => track.scrollBy({ left: 380, behavior: 'smooth' }));
+    leftBtn.addEventListener('click', () => track.scrollBy({ left: -380, behavior: 'smooth' }));
+  </script>
 
   <footer class="modern-footer">
       <div class="footer-main">
@@ -150,8 +162,3 @@ and policy-making for the region.</p>
       </div>
   </footer>
 </html>
-
-
-
-
-

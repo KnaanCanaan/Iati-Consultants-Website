@@ -399,8 +399,8 @@ a {
   background: darkblue;
   color: white;
   border: none;
-  width: 45px;
-  height: 45px;
+  width: 15px;
+  height: 25px;
   font-size: 30px;
   cursor: pointer;
   flex-shrink: 0;
@@ -412,7 +412,7 @@ a {
 }
 
 .carousel-btn:hover {
-  background: red;
+  color: red;
 }
 
 .services-card {
@@ -421,8 +421,8 @@ a {
   margin-top: 0%;
   padding: 15px;
   border: 1px solid #e5e7eb;
-  height: 340px;
-  width: 340px;
+  height: 360px;
+  width: 320px;
   box-shadow: -4px 4px 0px 0px darkblue;
 }
 

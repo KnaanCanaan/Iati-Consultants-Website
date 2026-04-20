@@ -244,19 +244,13 @@ textarea {
   box-shadow: -8px 8px 0px 0px darkblue
 }
 
-.form-boundary{
-  padding: 5%;
-  padding-top: 1.5%;
-  background-color: white;
-}
-
 .form-container {
   background: white;
   padding: 0.5%;
   padding-top: 15px;
 
-  margin-left: 0%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 
   width: 100%;
 }

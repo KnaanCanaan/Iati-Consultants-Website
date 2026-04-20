@@ -122,11 +122,6 @@ p,
 }
 
 /* ===== FORM ELEMENTS ===== */
-.form-format{
-  display: flex;
-  padding: 5%;
-}
-
 label {
   display: block;
   margin-bottom: 5px;

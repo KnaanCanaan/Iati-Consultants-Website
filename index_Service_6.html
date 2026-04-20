@@ -7,91 +7,89 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="Images/Favicon_IatC.png" type="image/png">
   </head>
 
   <body>
-    <!-- Navigation Section -->
-    <div class="navigation-menu-background">
+    <header class="navigation-menu-background">
       <div class="logo-position">
-        <a href="index.html"><h1><span class="logo-colour-change">IATI</span> CONSULTANTS</h1></a>
+        <a href="index.html" aria-label="Homepage">
+          <h2 class="logo-design"><span class="logo-colour-change">IATI</span> CONSULTANTS</h2>
+        </a>
       </div>
 
-      <div class="navigation-menu">
-        <div class="navigation-menu-element"><a href="index.html">Home</a></div>
+      <nav class="navigation-menu" aria-label="Main navigation">
+        <div class="navigation-menu-element"><a href="index.html" class="active">Home</a></div>
         <div class="navigation-menu-element"><a href="index_Services.html">Services</a></div>
         <div class="navigation-menu-element"><a href="index_Staff.html">Staff</a></div>
         <div class="navigation-menu-element"><a href="index_Contact.html">Contact</a></div>
-      </div>
-    </div>
-    
+      </nav>
+    </header>
+
     <a href="javascript:history.back()" style="color: white;"><div class="back-button">&lt;</div></a>
 
-    <div class="service-background-white" style="background-color: #f1f5f9;">
-      <img src="Images/Service-Pages-Image_6.png" class="contact-page-images">
+    <div class="service-background-white" style="padding-bottom: 2.5%;">
+      <img src="Images/Service-Pages-Image_6.png" class="service-page-images">
       <div class="contact-content">
         <h2>Survey Conducting</h2>
-        <p>We provide expert start-to-finish survey and data collection services designed for the
-Pacific’s unique cultural and political environment, including those involving Pacific
-communities in Aotearoa New Zealand. We have key connections in governments, civil
-society, academic and policy making circles who we can work with to gather data in
-politically sensitive and culturally appropriate ways. Culturally meaningful data gathering
-methodologies are critical to understanding the views of diverse Pacific populations both at
-home and in the diaspora, such as seasonal workers.</p>
-        <p>Our holistic approach includes project design, culturally appropriate fieldwork
-methodologies, rigorous data analysis, and effective and timely reporting. We have extensive
-research and analytical experience across several Pacific countries, and Pacific communities
-in Aotearoa New Zealand. We understand the requirements of engaging via local customs and
-cultural protocols, and handling logistical challenges presented by socio-political systems.
-This ensures ethical, accurate, and high-response-rate data collection. Our work supports
-governments, inter-governmental organizations, civil society, and businesses to develop
-evidence-based and mutually beneficial policies, programs, and community initiatives,
-ultimately contributing to a thriving Pacific region.</p>
+        <p>We provide expert start-to-finish survey and data collection services designed for the Pacific’s unique cultural and political environment. Our team bridges the gap between complex information needs and the realities challenges faced by Pacific participants. We specialize in gathering robust, culturally nuanced data from hard-to-reach and diverse populations, with a particular focus on Pacific Islander communities and the Seasonal Worker schemes.</p>
+        <p>Our holistic approach includes project design, culturally appropriate fieldwork methodologies, rigorous data analysis, and effective reporting. We have extensive research and analytical experience across multiple Pacific nations, understanding local customs, logistical challenges, and socio-political systems. This ensures ethical, accurate, and high-response-rate data collection. Our work supports governments, inter-governmental organizations, and NGOs to development evidence-based policies, programs, and community initiatives, ultimately contributing to a thriving Pacific region.</p>
       </div>
     </div>
 
-    <div class="form-container">
-      <h2>Contact Us</h2>
-      <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+    <div class="borderline"></div>
 
-        <input type="hidden" name="access_key" value="dfb1ed6b-d7f3-49a4-a00d-78ce1a2fa054">
+    <!-- Contact Form -->
+    <div class="form-boundary">
+      <div class="form-format" style="padding-top: 0%;">
+        <section class="form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="dfb1ed6b-d7f3-49a4-a00d-78ce1a2fa054">
 
-        <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required autocomplete="given-name">
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required autocomplete="family-name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="company-name">Company</label>
+              <input type="text" id="company-name" name="company-name" required autocomplete="organization">
+            </div>
+
+            <div class="form-group">
+              <label for="enquiry">Enquiry</label>
+              <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="button-design">Submit Enquiry</button>
+          </form>
+        </section>
+        <div class="form-text">
+          <h2>Get In Touch & Follow Us On Our Socials</h2>
+          <div class="social-media-logos">
+            <i class="fab fa-linkedin fa-4x"></i>
+            <i class="fab fa-instagram fa-4x"></i>
+            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-x-twitter fa-4x"></i>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-
-        <div class="form-group">
-          <label for="company-name">Company</label>
-          <input type="text" id="company-name" name="company-name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="enquiry">Enquiry</label>
-          <textarea id="enquiry" name="enquiry" required></textarea>
-        </div>
-
-        <button type="submit">Submit Enquiry</button>
-
-        <div class="success" id="successMessage">
-          Message sent successfully!
-        </div>
-      </form>
+      </div>
     </div>
   </body>
 
@@ -130,6 +128,3 @@ ultimately contributing to a thriving Pacific region.</p>
       </div>
   </footer>
 </html>
-
-
-

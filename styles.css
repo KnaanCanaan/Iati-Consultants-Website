@@ -717,6 +717,17 @@ a {
   color: silver;
 }
 
+.footer-legal p{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: left; 
+}
+
 .button-position {
   padding-bottom: 5%;
 }

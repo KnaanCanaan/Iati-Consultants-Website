@@ -39,6 +39,21 @@ section {
   margin-bottom: 1%;
 }
 
+.font-awesome-credit {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+.font-awesome-credit a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.font-awesome-credit a:hover {
+  color: #c00000;
+}
+
 /* ===== TYPOGRAPHY - CONSOLIDATED ===== */
 h1 {
   color: darkblue;

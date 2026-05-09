@@ -609,7 +609,7 @@ a {
   width: 35px;
   height: 35px;
   border-top-right-radius: 5px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;

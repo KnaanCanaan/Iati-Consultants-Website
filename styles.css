@@ -608,7 +608,7 @@ a {
 .back-button {
   width: 35px;
   height: 35px;
-  border-top-right-radius: 15px;
+  border-top-right-radius: 5px;
   border-bottom-right-radius: 15px;
   display: flex;
   align-items: center;

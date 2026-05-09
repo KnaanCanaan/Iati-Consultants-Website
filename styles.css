@@ -318,7 +318,7 @@ button {
   color: blue;
 }
 
-button:hover {
+.button-design:hover {
   transform: translate(0%, -5%);
   transform: scale(1.03);
 

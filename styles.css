@@ -307,9 +307,29 @@ button {
   padding: 1%;
   padding-top: 1%;
   padding-bottom: 1.2%;
+  background-color: darkblue;
+  color: white;
+  border: none;
 }
 
 .home-page-call-to-action:hover{
+  transform: translate(0%, -5%);
+  transform: scale(1.03);
+
+  box-shadow: -8px 8px 0px 0px white;
+}
+
+.service-page-call-to-action{
+  text-align: center;
+  font-size: 120%;
+  width: 18%;
+  border-radius: 0%;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1.2%;
+}
+
+.service-page-call-to-action:hover{
   transform: translate(0%, -5%);
   transform: scale(1.03);
 

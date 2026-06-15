@@ -1106,6 +1106,18 @@ a {
     font-size: 14px;
   }
 
+  .form-and-social-containter{
+    display: inline-block;
+  }
+
+  .form-container{
+    width: 100%;
+  }
+
+  .social-text-block{
+    width: 100%;
+  }
+
   .footer-placement {
     margin: 1%;
     margin-top: 0%;

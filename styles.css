@@ -806,7 +806,7 @@ a {
 
 .modern-footer .footer-links-columns {
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .modern-footer .links-col {

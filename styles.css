@@ -248,6 +248,11 @@ textarea {
   margin: 5%;
 }
 
+.form-and-social-containter{
+  margin-top: 2.5%;
+  display: flex;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .specialisations-grid {

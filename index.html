@@ -86,7 +86,21 @@
         <p>He was a senior lecturer at Otago University before taking up his current role as Senior Lecturer at the Politics and International Relations Programme at Victoria University of Wellington, and Pacific Security Fellow at the Centre for Strategic Studies.</p>
         <p>He has co-authored and edited publications such as "New Zealand and the World", "The China Alternative" and "China in Oceania". His work approach consists of analysing current events through a methodical and unbiased perspective.</p>
 
-        <a href="index_Staff.html"><button class="home-page-call-to-action-iati" aria-label="Go to staff page" style="margin-top: 3.8%;">WORK WITH DR. IATI</button></a>
+        <button class="service-page-call-to-action" style="width: 200px;" data-modal-open="Iati-Iati">QUALIFICATIONS</button>
+        <div data-modal-overlay class="modal-overlay" id="Iati-Iati">
+            <div class="modal">
+                <h2 style="margin-bottom: 5%;">QUALIFICATIONS</h2>
+                <p><span style="font-weight: bolder">PhD: </span>University of Hawaii at Manoa, Honolulu, United States</p>
+
+                <p><span style="font-weight: bolder">MA: </span>University of Canterbury, Christchurch, New Zealand</p>
+
+                <p><span style="font-weight: bolder">BCOM: </span>University of Canterbury, Christchurch, New Zealand</p>
+
+                <p><span style="font-weight: bolder;">BA First Class Honours: </span>University of Canterbury, Christchurch, New Zealand</p>
+
+                <button class="service-page-call-to-action" style="margin-top: 8%;"data-modal-close>CLOSE</button>
+            </div>
+        </div>
       </div>
     </section>
 
@@ -156,6 +170,130 @@
 
     rightBtn.addEventListener('click', () => track.scrollBy({ left: 380, behavior: 'smooth' }));
     leftBtn.addEventListener('click', () => track.scrollBy({ left: -380, behavior: 'smooth' }));
+  </script>
+
+    <script>
+    // ===== MODAL CONTROLLER =====
+    const Modal = {
+        // Configuration
+        config: {
+            openTrigger: '[data-modal-open]',
+            closeTrigger: '[data-modal-close]',
+            overlay: '[data-modal-overlay]',
+            activeClass: 'active',
+            closeOnOutsideClick: true,
+            closeOnEscape: true,
+            focusOnOpen: true,
+            returnFocus: true,
+        },
+
+        // State
+        currentModal: null,
+        currentOverlay: null,
+        previousFocus: null,
+
+        // Initialize
+        init(options = {}) {
+            this.config = { ...this.config, ...options };
+            this.bindEvents();
+            console.log('✅ Modal initialized');
+        },
+
+        bindEvents() {
+            // --- Open triggers (using ID from data-modal-open) ---
+            document.addEventListener('click', (e) => {
+                const trigger = e.target.closest(this.config.openTrigger);
+                if (trigger) {
+                    e.preventDefault();
+                    const modalId = trigger.getAttribute('data-modal-open');
+                    const overlay = document.getElementById(modalId);
+                    if (overlay) {
+                        this.open(trigger, overlay);
+                    }
+                }
+            });
+
+            // --- Close triggers ---
+            document.addEventListener('click', (e) => {
+                const trigger = e.target.closest(this.config.closeTrigger);
+                if (trigger) {
+                    e.preventDefault();
+                    const overlay = trigger.closest(this.config.overlay);
+                    if (overlay) {
+                        this.close(overlay);
+                    }
+                }
+            });
+
+            // --- Click outside overlay ---
+            document.addEventListener('click', (e) => {
+                const overlay = e.target.closest(this.config.overlay);
+                if (overlay && e.target === overlay && this.config.closeOnOutsideClick) {
+                    this.close(overlay);
+                }
+            });
+
+            // --- Escape key ---
+            if (this.config.closeOnEscape) {
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && this.currentOverlay) {
+                        this.close(this.currentOverlay);
+                    }
+                });
+            }
+        },
+
+        // Open modal
+        open(trigger = null, overlay = null) {
+            if (!overlay) return;
+
+            this.previousFocus = trigger || document.activeElement;
+            this.currentOverlay = overlay;
+            this.currentModal = overlay.querySelector('.modal');
+
+            overlay.classList.add(this.config.activeClass);
+            document.body.style.overflow = 'hidden';
+
+            if (this.config.focusOnOpen) {
+                const focusable = this.currentModal.querySelector('input, button, [tabindex="0"]');
+                const closeBtn = this.currentModal.querySelector(this.config.closeTrigger);
+                const target = focusable || closeBtn || this.currentModal;
+                setTimeout(() => target.focus(), 50);
+            }
+        },
+
+        // Close modal
+        close(overlay = null) {
+            const targetOverlay = overlay || this.currentOverlay;
+            if (!targetOverlay) return;
+
+            if (!targetOverlay.classList.contains(this.config.activeClass)) return;
+
+            targetOverlay.classList.remove(this.config.activeClass);
+            document.body.style.overflow = '';
+
+            if (this.config.returnFocus && this.previousFocus) {
+                setTimeout(() => this.previousFocus.focus(), 100);
+            }
+
+            if (targetOverlay === this.currentOverlay) {
+                this.currentOverlay = null;
+                this.currentModal = null;
+                this.previousFocus = null;
+            }
+        },
+
+        // Check if modal is open
+        isOpen() {
+            return this.currentOverlay && this.currentOverlay.classList.contains(this.config.activeClass);
+        }
+    };
+
+    // ===== AUTO-INIT on DOM ready =====
+    document.addEventListener('DOMContentLoaded', () => {
+        Modal.init();
+    });
+
   </script>
 
   <!-- Footer -->
